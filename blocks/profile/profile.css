@@ -4,7 +4,6 @@
     margin: 0 auto;
     padding-top: 40px;
     max-width: 880px;
-    max-height: 160px;
     grid-template-columns: 120px 342px 24px 1fr;
     grid-template-rows: 60px 60px;
     grid-template-areas:
@@ -24,7 +23,6 @@
     .profile {
         padding-top: 42px;
         max-width: 282px;
-        max-height: 328px;
         grid-template-columns: 1fr 47px;
         grid-template-rows: auto;
         grid-template-areas:

@@ -6,8 +6,8 @@ const popupContent = popup.querySelector(".popup__container");
 const popupCloseBtn = popup.querySelector(".popup__close-button");
 const profileName = document.querySelector(".profile__title");
 const profileDescription = document.querySelector(".profile__subtitle");
-const inputName = document.querySelector(".popup__input_name");
-const inputDescription = document.querySelector(".popup__input_description");
+const inputName = document.querySelector(".popup__input_type_name");
+const inputDescription = document.querySelector(".popup__input_type_description");
 const form = document.querySelector(".popup__form");
 
 function popupOpen() {
@@ -30,7 +30,7 @@ function savePopupChanges(evt) {
     evt.preventDefault();
     profileName.textContent = inputName.value;
     profileDescription.textContent = inputDescription.value;
-    console.log("ghbdtn")
+    popup.classList.remove(POPUP_OPENED_CLASS);
 }
 
 form.addEventListener("submit", savePopupChanges);
