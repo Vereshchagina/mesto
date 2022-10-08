@@ -1,0 +1,17 @@
+.popup {
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 195px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+    .popup {
+        padding-top: 123px;
+    }
+}
