@@ -30,7 +30,7 @@ function savePopupChanges(evt) {
     evt.preventDefault();
     profileName.textContent = inputName.value;
     profileDescription.textContent = inputDescription.value;
-    popup.classList.remove(POPUP_OPENED_CLASS);
+    popupClose("click");
 }
 
 form.addEventListener("submit", savePopupChanges);
